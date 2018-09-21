@@ -4,7 +4,6 @@ from PyQt4 import QtGui
 
 import socket
 from PyQt4.QtNetwork import *
-#import threading
 
 
 
@@ -70,10 +69,7 @@ class Ui_MainWindow(object):
 
         ##############################################################
         MainWindow.setCentralWidget(self.centralwidget)
-#        self.menubar = QtGui.QMenuBar(MainWindow)
-#        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 27))
-#        self.menubar.setObjectName(_fromUtf8("menubar"))
-#        MainWindow.setMenuBar(self.menubar)
+
         self.statusbar = QtGui.QStatusBar(MainWindow)
         self.statusbar.setObjectName(_fromUtf8("statusbar"))
         MainWindow.setStatusBar(self.statusbar)
@@ -103,7 +99,7 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "Chat:", None))
         self.label_2.setText(_translate("MainWindow", "Type here:", None))
         self.button.setText(_translate("MainWindow", "send", None))
-#in ezafe shode ta shayad dari bashi be samte nooooooooooooooooooooooooooooooor
+
 class thread(QtCore.QThread):
     def __init__(self,bo,  parent=None):
         super(thread, self).__init__(parent)
@@ -114,7 +110,7 @@ class thread(QtCore.QThread):
             m=c.recv(4096)
             if m and m!='q':
                 self.bo.insertPlainText(m.decode('utf-8')+'\n')
-#                
+
 
 
 
