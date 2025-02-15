@@ -25,8 +25,6 @@ STEPS for Linux users:
 
     
 
-Email me for any suggestions and updates .
-
-I apreciate your help .
+Email me for any suggestions and updates.
 
 moe.moradhaseli@gmail.com
